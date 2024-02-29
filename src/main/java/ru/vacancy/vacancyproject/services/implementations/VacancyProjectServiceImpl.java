@@ -21,7 +21,7 @@ public class VacancyProjectServiceImpl implements VacancyProjectService {
         if (vacancyProjectRequest.getUserData() == null)
             throw new IncorrectRequestBodyException("Добавьте user_data!");
 
-        log.info("user_id:{} user_data:{}", vacancyProjectRequest.getUserId(), vacancyProjectRequest.getUserData());
+        log.debug("user_id:{} user_data:{}", vacancyProjectRequest.getUserId(), vacancyProjectRequest.getUserData());
 
         return new VacancyProjectResponse("Processed successfully");
     }
